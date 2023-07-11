@@ -190,6 +190,10 @@ hr {
     width: 200px;
   }
 
+  main {
+    max-width: 80%;
+  }
+
   .hero {
     flex-direction: row;
   }
