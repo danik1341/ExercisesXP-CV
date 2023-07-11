@@ -1,0 +1,206 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+html {
+  height: 100%;
+  font-family: "Arimo", sans-serif;
+}
+body {
+  background-image: url("assets/spongebob-bikini-bottom-wallpaper-63311-65364-hd-wallpapers.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  height: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  background-color: rgba(204, 204, 204, 0.774);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 35vh;
+}
+
+.cred {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+}
+
+.cred h1 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.cred span {
+  font-weight: 700;
+}
+
+.cred h2 {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+header img {
+  aspect-ratio: 1;
+  width: 100px;
+  border-radius: 100%;
+  margin-bottom: 10px;
+}
+
+hr {
+  width: 90%;
+  align-self: center;
+  background-color: black;
+  height: 5px;
+  border-radius: 25%;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.info {
+  padding-bottom: 10px;
+}
+
+.info ul {
+  margin: 10px 0px 20px 0px;
+  text-align: start;
+}
+
+.info li {
+  padding: 5px;
+}
+
+.info ul i {
+  margin-right: 10px;
+}
+
+.info a {
+  text-decoration: none;
+  color: black;
+}
+
+.education {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.article {
+  padding: 20px;
+}
+
+.article p {
+  text-align: start;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.article p span {
+  font-weight: 700;
+}
+
+.info h2 {
+  padding: 10px;
+}
+
+.article .work {
+  padding: 10px;
+}
+
+.work li {
+  list-style: inside;
+}
+
+.work h2 {
+  padding: 10px;
+}
+
+.work h3 {
+  color: rgba(0, 0, 0, 0.8);
+  padding-bottom: 10px;
+}
+
+.work li {
+  padding: 5px;
+  text-align: start;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/*Responsive Styles */
+
+/* Mobile Landscape */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  header {
+    height: 65vh;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  header {
+    height: 25vh;
+  }
+
+  header img {
+    width: 150px;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 980px) {
+  header {
+    flex-direction: row;
+    height: 20vh;
+    justify-content: space-evenly;
+  }
+
+  header img {
+    width: 200px;
+  }
+
+  .info ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .info ul li {
+    margin-inline: 10px;
+  }
+
+  .article p {
+    text-align: center;
+    max-width: 1000px;
+  }
+}
