@@ -16,7 +16,6 @@ body {
   background-size: cover;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   height: 100%;
 }
@@ -178,6 +177,9 @@ hr {
 
 /* Desktop */
 @media only screen and (min-width: 980px) {
+  body {
+    justify-content: center;
+  }
   header {
     flex-direction: row;
     height: 20vh;
@@ -186,6 +188,19 @@ hr {
 
   header img {
     width: 200px;
+  }
+
+  .hero {
+    flex-direction: row;
+  }
+
+  #row_one {
+    justify-content: space-evenly;
+    width: 30%;
+  }
+
+  #row_two {
+    flex-grow: 1;
   }
 
   .info ul {
